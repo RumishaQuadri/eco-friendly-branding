@@ -1,24 +1,18 @@
 import { Link } from "@tanstack/react-router";
-import { Leaf, Mail, MapPin, Phone, Facebook, Instagram, Linkedin, Twitter } from "lucide-react";
+import { Mail, MapPin, Phone, Facebook, Instagram, Linkedin, Twitter } from "lucide-react";
 import { Button } from "@/components/site/Button";
-import { categories, company, services } from "@/data/site";
+import { categories, company, images, services } from "@/data/site";
 
 export function Footer() {
   return (
     <footer className="bg-gradient-dark text-background/75">
       <div className="container-x grid gap-12 py-20 md:grid-cols-2 lg:grid-cols-5">
         <div className="lg:col-span-2">
-          <div className="flex items-center gap-3">
-            <span className="grid h-11 w-11 place-items-center rounded-2xl bg-background/10">
-              <Leaf className="h-5 w-5 text-secondary" />
-            </span>
-            <span>
-              <span className="block font-display text-xl text-background">Eco-Friendly</span>
-              <span className="block text-[0.62rem] tracking-[0.28em] text-secondary uppercase">
-                Nutraceuticals
-              </span>
-            </span>
-          </div>
+          <img
+            src={images.brandLogo}
+            alt="Eco-Friendly Nutraceuticals"
+            className="h-auto w-56 max-w-full object-contain"
+          />
           <p className="mt-6 max-w-sm text-sm leading-relaxed">
             A WHO-GMP certified Indian nutraceutical manufacturer building trusted supplement
             brands through science, sustainability and precision production.

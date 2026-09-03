@@ -187,11 +187,16 @@ function Home() {
               ))}
             </div>
           </div>
-          <RevealImage
-            src={images.manufacturingLine}
-            alt="Automated bottling line"
-            className="aspect-4/3 rounded-3xl"
-          />
+          <div>
+            <RevealImage
+              src={images.proposedFacility}
+              alt="Eco-Friendly Nutraceuticals proposed manufacturing facility"
+              className="aspect-4/3 rounded-3xl"
+            />
+            <p className="mt-4 text-center font-display text-lg text-secondary sm:text-xl">
+              Proposed facility: built for your next big launch
+            </p>
+          </div>
         </div>
       </section>
 
