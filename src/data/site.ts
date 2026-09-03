@@ -238,6 +238,36 @@ export const testimonials = [
     quote:
       "The finished powders mix cleanly, taste great and arrive with the traceability our retail partners expect.",
   },
+  {
+    name: "Maya Srinivasan",
+    role: "Co-founder, WellRoot Naturals",
+    quote:
+      "The team brought structure to every stage of our launch, from formulation and sampling through final packaging and dispatch.",
+  },
+  {
+    name: "Tanya Menon",
+    role: "Product Manager, LittleSprout",
+    quote:
+      "The low-MOQ approach gave our new kids range room to grow, while the production standards stayed enterprise-grade.",
+  },
+  {
+    name: "Sameer Gill",
+    role: "Director, PurePath Exports",
+    quote:
+      "Their export support removed weeks of complexity from our process. Documentation and dispatch coordination are excellent.",
+  },
+  {
+    name: "Ishita Roy",
+    role: "Founder, Daily Ritual Co.",
+    quote:
+      "Every detail, from the first sample to the final carton, felt considered. We are proud to put our name on the range.",
+  },
+  {
+    name: "Aditya Khanna",
+    role: "Founder, Restore Nutrition",
+    quote:
+      "The finished powders mix cleanly, taste great and arrive with the traceability our retail partners expect.",
+  },
 ];
 
 export const whyChoose = [
