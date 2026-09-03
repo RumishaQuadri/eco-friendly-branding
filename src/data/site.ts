@@ -1,6 +1,8 @@
 import heroFactory from "@/assets/hero-factory.jpg";
+import heroFactoryBranded from "@/assets/hero-factory-branded.png";
 import heroProducts from "@/assets/hero-products.jpg";
 import heroLab from "@/assets/hero-lab.jpg";
+import heroLabBranded from "@/assets/hero-lab-branded.png";
 import heroHerbs from "@/assets/hero-herbs.jpg";
 import aboutFacility from "@/assets/about-facility.jpg";
 import manufacturingLine from "@/assets/manufacturing-line.jpg";
@@ -18,11 +20,18 @@ import catKids from "@/assets/cat-kids.jpg";
 import catBeverages from "@/assets/cat-beverages.jpg";
 import catOils from "@/assets/cat-oils.jpg";
 import catImmune from "@/assets/cat-immune.jpg";
+import logoAsset from "@/assets/eco-friendly-logo.png.asset.json";
+import proposedFacilityAsset from "@/assets/proposed-facility.jpg.asset.json";
+
+const brandLogo = logoAsset.url;
+const proposedFacility = proposedFacilityAsset.url;
 
 export const images = {
   heroFactory,
+  heroFactoryBranded,
   heroProducts,
   heroLab,
+  heroLabBranded,
   heroHerbs,
   aboutFacility,
   manufacturingLine,
@@ -40,6 +49,8 @@ export const images = {
   catBeverages,
   catOils,
   catImmune,
+  brandLogo,
+  proposedFacility,
 };
 
 export const company = {
@@ -72,7 +83,7 @@ export const heroSlides = [
     text: "Capsules, tablets, softgels, gummies and effervescents — formulated, tested and labelled for your brand.",
   },
   {
-    image: heroFactory,
+    image: heroFactoryBranded,
     eyebrow: "WHO-GMP Certified Manufacturing",
     title: "India's Trusted Nutraceutical Manufacturer",
     text: "Two decades of contract manufacturing excellence — from formulation to finished, export-ready packaging.",
@@ -84,7 +95,7 @@ export const heroSlides = [
     text: "Launch a complete supplement range with bespoke formulations, packaging design and regulatory support.",
   },
   {
-    image: heroLab,
+    image: heroLabBranded,
     eyebrow: "Research Driven",
     title: "Science That Earns Consumer Trust",
     text: "In-house R&D and NABL-grade quality testing at every stage of the production cycle.",
@@ -154,6 +165,78 @@ export const testimonials = [
     role: "CEO, FitKart Labs",
     quote:
       "Transparent line-item costing and no house brand competing with us. It feels like an extension of our own team.",
+  },
+  {
+    name: "Meera Kapoor",
+    role: "Founder, Nourish Daily",
+    quote:
+      "Eco-Friendly turned a rough product idea into a polished launch range with excellent documentation and a very responsive team.",
+  },
+  {
+    name: "Vikram Sethi",
+    role: "Managing Director, VitalForm",
+    quote:
+      "From pilot quantities to our national rollout, every batch has been consistent and delivered exactly to specification.",
+  },
+  {
+    name: "Priya Nair",
+    role: "Brand Director, BloomWell",
+    quote:
+      "The team helped us simplify our formula without losing the benefits customers cared about. The finished product looks and feels premium.",
+  },
+  {
+    name: "Arjun Mehta",
+    role: "Founder, Terra Nutrition",
+    quote:
+      "Clear communication, dependable production slots and labels that passed review first time. They make manufacturing feel straightforward.",
+  },
+  {
+    name: "Rhea Fernandes",
+    role: "Operations Lead, GoodLife Labs",
+    quote:
+      "Our gummies have become a repeat bestseller. The flavour development and quality checks were handled with real care.",
+  },
+  {
+    name: "Dev Joshi",
+    role: "Co-founder, CoreCraft",
+    quote:
+      "The packaging team understood our visual direction and translated it beautifully across jars, pouches and cartons.",
+  },
+  {
+    name: "Nisha Bansal",
+    role: "Founder, HerBalance",
+    quote:
+      "We launched our women's wellness line with confidence because every claim, ingredient and batch record was carefully supported.",
+  },
+  {
+    name: "Kabir Rao",
+    role: "CEO, ActiveRoot",
+    quote:
+      "Reliable lead times and a genuinely collaborative R&D process. Eco-Friendly is now a long-term part of our growth plan.",
+  },
+  {
+    name: "Tanya Menon",
+    role: "Product Manager, LittleSprout",
+    quote:
+      "The low-MOQ approach gave our new kids range room to grow, while the production standards stayed enterprise-grade.",
+  },
+  {
+    name: "Sameer Gill",
+    role: "Director, PurePath Exports",
+    quote:
+      "Their export support removed weeks of complexity from our process. Documentation and dispatch coordination are excellent.",
+  },
+  {
+    name: "Ishita Roy",
+    role: "Founder, Daily Ritual Co.",
+    quote:
+      "Every detail, from the first sample to the final carton, felt considered. We are proud to put our name on the range.",
+  },
+  {
+    name: "Aditya Khanna",
+    role: "Founder, Restore Nutrition",
+    quote:
+      "The finished powders mix cleanly, taste great and arrive with the traceability our retail partners expect.",
   },
 ];
 
