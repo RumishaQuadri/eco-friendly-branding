@@ -39,12 +39,17 @@ export function Testimonials() {
 
         <div className="relative mt-10 overflow-hidden sm:mt-14">
           <motion.div
-            className="flex w-[1300%]"
+            className="flex"
+            style={{ width: `${(testimonials.length / perView) * 100}%` }}
             animate={{ x: `${-(activeIndex * 100) / testimonials.length}%` }}
             transition={{ type: "spring", stiffness: 260, damping: 30 }}
           >
             {testimonials.map((t) => (
-              <div key={t.name} className="w-[7.692307%] shrink-0 px-2 sm:px-3">
+              <div
+                key={t.name}
+                className="shrink-0 px-2 sm:px-3"
+                style={{ width: `${100 / testimonials.length}%` }}
+              >
                 <article className="flex h-full min-h-[18rem] flex-col rounded-3xl border border-border bg-card p-7 shadow-soft sm:p-8">
                   <Quote className="h-7 w-7 shrink-0 text-gold" />
                   <p className="mt-5 flex-1 text-sm leading-relaxed text-muted-foreground">
