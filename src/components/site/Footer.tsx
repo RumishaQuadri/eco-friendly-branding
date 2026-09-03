@@ -11,7 +11,7 @@ export function Footer() {
           <img
             src={images.brandLogo}
             alt="Eco-Friendly Nutraceuticals"
-            className="h-auto w-56 max-w-full object-contain"
+            className="h-auto w-56 max-w-full rounded-md bg-background px-3 py-2 object-contain"
           />
           <p className="mt-6 max-w-sm text-sm leading-relaxed">
             A WHO-GMP certified Indian nutraceutical manufacturer building trusted supplement
