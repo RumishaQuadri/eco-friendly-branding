@@ -1,8 +1,9 @@
 import { Link } from "@tanstack/react-router";
 import { AnimatePresence, motion } from "motion/react";
-import { Menu, X, Leaf } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { useEffect, useState } from "react";
 import { Button } from "@/components/site/Button";
+import { images } from "@/data/site";
 
 const nav = [
   { to: "/", label: "Home" },
@@ -51,31 +52,14 @@ export function Header() {
 
         <Link
           to="/"
-          className="flex min-w-0 items-center justify-center gap-3 lg:justify-start"
+          className="flex min-w-0 items-center justify-center lg:justify-start"
           onClick={() => setOpen(false)}
         >
-          <span
-            className="grid h-11 w-11 shrink-0 place-items-center rounded-2xl"
-            style={{ backgroundImage: "var(--gradient-dark)" }}
-          >
-            <Leaf className="h-5 w-5 text-secondary" />
-          </span>
-          <span className="min-w-0">
-            <span
-              className={`block truncate font-display text-xl leading-none font-semibold ${
-                scrolled ? "text-primary" : "text-background"
-              } transition-colors`}
-            >
-              Eco-Friendly
-            </span>
-            <span
-              className={`block truncate text-[0.62rem] tracking-[0.28em] uppercase ${
-                scrolled ? "text-muted-foreground" : "text-secondary"
-              }`}
-            >
-              Nutraceuticals
-            </span>
-          </span>
+          <img
+            src={images.brandLogo}
+            alt="Eco-Friendly Nutraceuticals"
+            className="h-10 w-auto max-w-[12rem] rounded-md bg-background/90 px-2 py-1 object-contain sm:h-12"
+          />
         </Link>
 
         <nav className="hidden items-center gap-9 lg:flex">

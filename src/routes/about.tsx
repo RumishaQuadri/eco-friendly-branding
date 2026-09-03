@@ -55,7 +55,7 @@ function About() {
             </Reveal>
           </div>
           <RevealImage
-            src={images.manufacturingLine}
+            src={images.heroFactoryBranded}
             alt="Eco-Friendly production line"
             className="aspect-4/3 rounded-3xl shadow-lift"
           />
@@ -119,13 +119,13 @@ function About() {
           />
           <div className="mt-14 grid gap-5 md:grid-cols-3">
             <RevealImage
-              src={images.heroFactory}
+              src={images.heroFactoryBranded}
               alt="Coating and encapsulation area"
               className="aspect-4/3 rounded-3xl md:col-span-2 md:aspect-auto md:h-full"
             />
             <div className="grid gap-5">
               <RevealImage
-                src={images.heroLab}
+                src={images.heroLabBranded}
                 alt="Quality control laboratory"
                 className="aspect-4/3 rounded-3xl"
               />
