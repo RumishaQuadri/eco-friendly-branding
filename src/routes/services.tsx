@@ -3,7 +3,7 @@ import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/site/Button";
 import { CTASection } from "@/components/site/CTASection";
 import { PageBanner, SectionHeading } from "@/components/site/PageBanner";
-import { Reveal } from "@/components/site/Reveal";
+import { BrandStamp, Reveal } from "@/components/site/Reveal";
 import { images, services } from "@/data/site";
 
 export const Route = createFileRoute("/services")({
@@ -54,6 +54,7 @@ function Services() {
                       loading="lazy"
                       className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
                     />
+                    <BrandStamp />
                   </div>
                   <div className="flex flex-1 flex-col p-8">
                     <h3 className="font-display text-xl text-primary">{s.title}</h3>

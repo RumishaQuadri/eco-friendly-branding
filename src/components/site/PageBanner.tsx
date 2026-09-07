@@ -1,4 +1,4 @@
-import { Reveal } from "@/components/site/Reveal";
+import { BrandStamp, Reveal } from "@/components/site/Reveal";
 
 export function PageBanner({
   image,
@@ -20,6 +20,7 @@ export function PageBanner({
         width={1920}
         height={1080}
       />
+      <BrandStamp />
       <div className="absolute inset-0 bg-gradient-to-t from-scrim/75 via-scrim/35 to-transparent" />
       <div className="container-x relative pb-6 sm:pb-16">
         <Reveal>

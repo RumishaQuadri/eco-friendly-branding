@@ -54,7 +54,7 @@ export const images = {
 };
 
 export const company = {
-  name: "Eco-Friendly",
+  name: "Eco-Friendly Resources Private Limited",
   tagline: "Nutraceutical Manufacturing, Perfected in India",
   address: "Plot 42, Pharma City, Baddi Industrial Area, Solan, Himachal Pradesh 173205, India",
   phone: "+91 98110 45678",
