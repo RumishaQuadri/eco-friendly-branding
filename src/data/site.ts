@@ -1,16 +1,16 @@
 import heroFactory from "@/assets/hero-factory.jpg";
-import heroFactoryBranded from "@/assets/hero-factory-branded.png";
+import heroFactoryBranded from "@/assets/hero-factory-resources.png";
 import heroProducts from "@/assets/hero-products.jpg";
 import heroLab from "@/assets/hero-lab.jpg";
-import heroLabBranded from "@/assets/hero-lab-branded.png";
+import heroLabBranded from "@/assets/hero-lab-resources.png";
 import heroHerbs from "@/assets/hero-herbs.jpg";
 import aboutFacility from "@/assets/about-facility.jpg";
 import manufacturingLine from "@/assets/manufacturing-line.jpg";
 import family from "@/assets/family.jpg";
 import ctaBg from "@/assets/cta-bg.jpg";
-import proteinPowder from "@/assets/product-protein-powder.jpg";
-import proteinBars from "@/assets/product-protein-bars.jpg";
-import supplementsShot from "@/assets/product-supplements.jpg";
+import proteinPowder from "@/assets/product-protein-powder-resources.png";
+import proteinBars from "@/assets/product-bars-resources.png";
+import supplementsShot from "@/assets/product-supplements-resources.png";
 import catVitamins from "@/assets/cat-vitamins.jpg";
 import catGummies from "@/assets/cat-gummies.jpg";
 import catWeight from "@/assets/cat-weight.jpg";
@@ -20,7 +20,7 @@ import catKids from "@/assets/cat-kids.jpg";
 import catBeverages from "@/assets/cat-beverages.jpg";
 import catOils from "@/assets/cat-oils.jpg";
 import catImmune from "@/assets/cat-immune.jpg";
-import logoAsset from "@/assets/eco-friendly-logo.png.asset.json";
+import logoAsset from "@/assets/eco-friendly-resources-logo.png.asset.json";
 import proposedFacilityAsset from "@/assets/proposed-facility.jpg.asset.json";
 
 const brandLogo = logoAsset.url;
@@ -54,7 +54,7 @@ export const images = {
 };
 
 export const company = {
-  name: "Eco-Friendly",
+  name: "Eco-Friendly Resources Private Limited",
   tagline: "Nutraceutical Manufacturing, Perfected in India",
   address: "Plot 42, Pharma City, Baddi Industrial Area, Solan, Himachal Pradesh 173205, India",
   phone: "+91 98110 45678",

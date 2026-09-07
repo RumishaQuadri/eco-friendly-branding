@@ -1,5 +1,6 @@
 import { motion, type Variants } from "motion/react";
 import type { ReactNode } from "react";
+import { images } from "@/data/site";
 
 type Props = {
   children: ReactNode;
@@ -62,6 +63,23 @@ export function RevealImage({
         transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
         viewport={{ once: true, amount: 0.05 }}
       />
+        <img
+          src={images.brandLogo}
+          alt=""
+          aria-hidden="true"
+          className="absolute right-3 top-3 w-28 rounded-md bg-background/90 p-1.5 shadow-soft sm:right-4 sm:top-4 sm:w-36"
+        />
     </motion.div>
+  );
+}
+
+export function BrandStamp() {
+  return (
+    <img
+      src={images.brandLogo}
+      alt=""
+      aria-hidden="true"
+      className="absolute right-3 top-3 z-10 w-28 rounded-md bg-background/90 p-1.5 shadow-soft sm:right-4 sm:top-4 sm:w-36"
+    />
   );
 }

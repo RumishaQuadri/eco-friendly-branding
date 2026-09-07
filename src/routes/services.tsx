@@ -3,7 +3,7 @@ import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/site/Button";
 import { CTASection } from "@/components/site/CTASection";
 import { PageBanner, SectionHeading } from "@/components/site/PageBanner";
-import { Reveal } from "@/components/site/Reveal";
+import { BrandStamp, Reveal } from "@/components/site/Reveal";
 import { images, services } from "@/data/site";
 
 export const Route = createFileRoute("/services")({
@@ -46,7 +46,7 @@ function Services() {
           <div className="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {services.map((s, i) => (
               <Reveal key={s.title} delay={(i % 3) * 0.08}>
-                <article className="card-lift group flex h-full flex-col overflow-hidden rounded-3xl border border-border bg-card shadow-soft">
+                <article className="card-lift group relative flex h-full flex-col overflow-hidden rounded-3xl border border-border bg-card shadow-soft">
                   <div className="aspect-16/10 overflow-hidden">
                     <img
                       src={s.image}
@@ -54,6 +54,7 @@ function Services() {
                       loading="lazy"
                       className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
                     />
+                    <BrandStamp />
                   </div>
                   <div className="flex flex-1 flex-col p-8">
                     <h3 className="font-display text-xl text-primary">{s.title}</h3>

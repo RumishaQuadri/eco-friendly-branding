@@ -85,7 +85,7 @@ function Contact() {
   return (
     <>
       <PageBanner
-        image={images.heroLab}
+        image={images.heroLabBranded}
         eyebrow="Contact Us"
         title="Let's talk about your product"
         text="Tell us what you want to build and we'll respond with formulation options and costing."
