@@ -135,7 +135,7 @@ function Home() {
             {categories.map((c, i) => (
               <Reveal key={c.slug} delay={(i % 3) * 0.08}>
                 <Link to="/gallery" className="group block">
-                  <article className="card-lift overflow-hidden rounded-3xl border border-border bg-card shadow-soft">
+                  <article className="card-lift relative overflow-hidden rounded-3xl border border-border bg-card shadow-soft">
                     <div className="aspect-16/10 overflow-hidden">
                       <img
                         src={c.image}

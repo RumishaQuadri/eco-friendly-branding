@@ -94,7 +94,7 @@ function Gallery() {
                             {items.map((p) => (
                               <article
                                 key={p.id}
-                                className="card-lift group flex flex-col overflow-hidden rounded-2xl border border-border bg-background"
+                                className="card-lift group relative flex flex-col overflow-hidden rounded-2xl border border-border bg-background"
                               >
                                 <div className="aspect-4/3 overflow-hidden bg-muted">
                                   <img

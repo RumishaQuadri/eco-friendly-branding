@@ -46,7 +46,7 @@ function Services() {
           <div className="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {services.map((s, i) => (
               <Reveal key={s.title} delay={(i % 3) * 0.08}>
-                <article className="card-lift group flex h-full flex-col overflow-hidden rounded-3xl border border-border bg-card shadow-soft">
+                <article className="card-lift group relative flex h-full flex-col overflow-hidden rounded-3xl border border-border bg-card shadow-soft">
                   <div className="aspect-16/10 overflow-hidden">
                     <img
                       src={s.image}
