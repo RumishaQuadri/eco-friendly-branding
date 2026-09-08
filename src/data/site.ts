@@ -20,10 +20,9 @@ import catKids from "@/assets/cat-kids.jpg";
 import catBeverages from "@/assets/cat-beverages.jpg";
 import catOils from "@/assets/cat-oils.jpg";
 import catImmune from "@/assets/cat-immune.jpg";
-import logoAsset from "@/assets/eco-friendly-resources-private-limited.png.asset.json";
+import brandLogo from "@/assets/eco-friendly-resources-logo-transparent.png";
 import proposedFacilityAsset from "@/assets/proposed-facility.jpg.asset.json";
 
-const brandLogo = logoAsset.url;
 const proposedFacility = proposedFacilityAsset.url;
 
 export const images = {

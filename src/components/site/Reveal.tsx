@@ -67,7 +67,7 @@ export function RevealImage({
           src={images.brandLogo}
           alt=""
           aria-hidden="true"
-          className="absolute right-3 top-3 w-28 rounded-md bg-background/90 p-1.5 shadow-soft sm:right-4 sm:top-4 sm:w-36"
+          className="absolute right-3 top-3 w-28 object-contain sm:right-4 sm:top-4 sm:w-36"
         />
     </motion.div>
   );
@@ -79,7 +79,7 @@ export function BrandStamp() {
       src={images.brandLogo}
       alt=""
       aria-hidden="true"
-      className="absolute right-3 top-3 z-10 w-28 rounded-md bg-background/90 p-1.5 shadow-soft sm:right-4 sm:top-4 sm:w-36"
+      className="absolute right-3 top-3 z-10 w-28 object-contain sm:right-4 sm:top-4 sm:w-36"
     />
   );
 }
