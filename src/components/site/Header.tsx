@@ -58,7 +58,7 @@ export function Header() {
           <img
             src={images.brandLogo}
             alt="Eco-Friendly Resources Private Limited"
-            className="h-10 w-auto max-w-[13rem] rounded-md bg-background/90 px-2 py-1 object-contain sm:h-12"
+            className="h-10 w-auto max-w-[13rem] object-contain sm:h-12"
           />
         </Link>
 
