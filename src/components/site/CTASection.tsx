@@ -2,7 +2,7 @@ import { Link } from "@tanstack/react-router";
 import { motion, useScroll, useTransform } from "motion/react";
 import { useRef } from "react";
 import { Button } from "@/components/site/Button";
-import { BrandStamp, Reveal } from "@/components/site/Reveal";
+import { Reveal } from "@/components/site/Reveal";
 import { images } from "@/data/site";
 
 export function CTASection() {
@@ -19,7 +19,6 @@ export function CTASection() {
         style={{ y }}
         className="absolute inset-0 h-[124%] w-full object-cover"
       />
-      <BrandStamp />
       <div className="absolute inset-0 bg-scrim/55" />
       <div className="container-x relative py-8 text-center lg:py-10">
         <Reveal>

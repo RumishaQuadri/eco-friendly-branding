@@ -4,7 +4,6 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { Button } from "@/components/site/Button";
 import { heroSlides } from "@/data/site";
-import { BrandStamp } from "@/components/site/Reveal";
 
 export function HeroSlider() {
   const [[index, dir], setState] = useState<[number, number]>([0, 1]);
@@ -47,7 +46,6 @@ export function HeroSlider() {
             width={1920}
             height={1080}
           />
-          <BrandStamp />
           <div className="absolute inset-0 bg-gradient-to-r from-scrim/85 via-scrim/50 to-scrim/10" />
         </motion.div>
       </AnimatePresence>
