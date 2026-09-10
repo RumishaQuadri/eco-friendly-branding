@@ -47,7 +47,7 @@ function Services() {
             {services.map((s, i) => (
               <Reveal key={s.title} delay={(i % 3) * 0.08}>
                 <article className="card-lift group relative flex h-full flex-col overflow-hidden rounded-3xl border border-border bg-card shadow-soft">
-                  <div className="aspect-16/10 overflow-hidden">
+                  <div className="relative aspect-16/10 overflow-hidden">
                     <img
                       src={s.image}
                       alt={s.title}

@@ -3,8 +3,8 @@ import { AnimatePresence, motion } from "motion/react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { Button } from "@/components/site/Button";
-import { heroSlides } from "@/data/site";
 import { BrandStamp } from "@/components/site/Reveal";
+import { heroSlides } from "@/data/site";
 
 export function HeroSlider() {
   const [[index, dir], setState] = useState<[number, number]>([0, 1]);
