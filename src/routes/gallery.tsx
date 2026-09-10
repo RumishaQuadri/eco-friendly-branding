@@ -5,7 +5,7 @@ import { useState } from "react";
 import { Button } from "@/components/site/Button";
 import { CTASection } from "@/components/site/CTASection";
 import { PageBanner, SectionHeading } from "@/components/site/PageBanner";
-import { BrandStamp, Reveal } from "@/components/site/Reveal";
+import { Reveal } from "@/components/site/Reveal";
 import { categories, company, images, products } from "@/data/site";
 
 export const Route = createFileRoute("/gallery")({
@@ -103,7 +103,6 @@ function Gallery() {
                                     loading="lazy"
                                     className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
                                   />
-                                  <BrandStamp />
                                 </div>
                                 <div className="flex flex-1 flex-col p-6">
                                   <h3 className="font-display text-lg leading-snug text-primary">

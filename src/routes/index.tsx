@@ -16,7 +16,7 @@ import { Testimonials } from "@/components/site/Testimonials";
 import { Counter } from "@/components/site/Counter";
 import { HeroSlider } from "@/components/site/HeroSlider";
 import { SectionHeading } from "@/components/site/PageBanner";
-import { BrandStamp, Reveal, RevealImage } from "@/components/site/Reveal";
+import { Reveal, RevealImage } from "@/components/site/Reveal";
 import {
   categories,
   certifications,
@@ -143,7 +143,6 @@ function Home() {
                         loading="lazy"
                         className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
                       />
-                      <BrandStamp />
                     </div>
                     <div className="p-7">
                       <h3 className="font-display text-xl text-primary">{c.title}</h3>
