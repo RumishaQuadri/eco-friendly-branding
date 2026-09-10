@@ -84,36 +84,6 @@ export function HeroSlider() {
         </div>
       </div>
 
-      <div className="container-x absolute inset-x-0 bottom-6 flex items-center justify-between sm:bottom-8">
-        <div className="flex gap-2">
-          {heroSlides.map((s, i) => (
-            <button
-              key={s.title}
-              aria-label={`Go to slide ${i + 1}`}
-              onClick={() => go(i, i > index ? 1 : -1)}
-              className={`h-1.5 rounded-full transition-all duration-500 ${
-                i === index ? "w-8 bg-secondary sm:w-10" : "w-4 bg-background/40 hover:bg-background/70"
-              }`}
-            />
-          ))}
-        </div>
-        <div className="flex shrink-0 gap-3">
-          <button
-            aria-label="Previous slide"
-            onClick={() => go(index - 1, -1)}
-            className="grid h-11 w-11 place-items-center rounded-full border border-background/40 text-background transition-colors hover:bg-background hover:text-primary sm:h-12 sm:w-12"
-          >
-            <ChevronLeft className="h-5 w-5" />
-          </button>
-          <button
-            aria-label="Next slide"
-            onClick={() => go(index + 1, 1)}
-            className="grid h-11 w-11 place-items-center rounded-full border border-background/40 text-background transition-colors hover:bg-background hover:text-primary sm:h-12 sm:w-12"
-          >
-            <ChevronRight className="h-5 w-5" />
-          </button>
-        </div>
-      </div>
     </section>
   );
 }
