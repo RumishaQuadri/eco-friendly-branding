@@ -45,6 +45,21 @@ export function BrandStamp() {
   );
 }
 
+export function ProductBrandMark() {
+  return (
+    <div className="absolute bottom-3 left-3 z-10 flex items-center gap-2 rounded-md bg-scrim/70 px-2.5 py-1.5 backdrop-blur-sm sm:bottom-4 sm:left-4">
+      <img
+        src={brandLogo}
+        alt="Eco-Friendly Resources Private Limited"
+        className="h-7 w-14 object-contain sm:h-8 sm:w-16"
+      />
+      <span className="max-w-24 text-[9px] font-semibold leading-tight tracking-[0.14em] text-background uppercase">
+        Eco-Friendly Resources
+      </span>
+    </div>
+  );
+}
+
 export function RevealImage({
   src,
   alt,
@@ -75,6 +90,7 @@ export function RevealImage({
         viewport={{ once: true, amount: 0.05 }}
       />
       <BrandStamp />
+      <ProductBrandMark />
     </motion.div>
   );
 }
