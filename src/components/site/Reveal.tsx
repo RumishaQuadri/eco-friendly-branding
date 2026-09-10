@@ -1,6 +1,5 @@
 import { motion, type Variants } from "motion/react";
 import type { ReactNode } from "react";
-import { images } from "@/data/site";
 type Props = {
   children: ReactNode;
   delay?: number;
@@ -33,14 +32,21 @@ export function Reveal({ children, delay = 0, y = 28, blur = false, className }:
   );
 }
 
+const suppliedLogoUrl =
+  "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-09-10%20at%209.02.53%20AM-inOAzwH93G1Qi0495emBMEe6oHB0FT.jpeg";
+
 export function BrandStamp() {
   return (
-    <img
-      src={images.brandLogo}
-      alt=""
-      aria-hidden="true"
-      className="absolute right-3 top-3 z-10 w-28 object-contain sm:right-4 sm:top-4 sm:w-36"
-    />
+    <div className="absolute right-3 top-3 z-10 flex w-32 flex-col items-end gap-1 sm:right-4 sm:top-4 sm:w-40">
+      <img
+        src={suppliedLogoUrl}
+        alt="Eco-Friendly Resources Private Limited"
+        className="w-full rounded-md object-contain shadow-lg"
+      />
+      <span className="rounded bg-scrim/70 px-2 py-1 text-[9px] font-semibold tracking-[0.16em] text-background uppercase">
+        Eco-Friendly Resources
+      </span>
+    </div>
   );
 }
 
@@ -73,6 +79,7 @@ export function RevealImage({
         transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
         viewport={{ once: true, amount: 0.05 }}
       />
+      <BrandStamp />
     </motion.div>
   );
 }

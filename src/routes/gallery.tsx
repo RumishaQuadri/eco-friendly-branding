@@ -5,7 +5,7 @@ import { useState } from "react";
 import { Button } from "@/components/site/Button";
 import { CTASection } from "@/components/site/CTASection";
 import { PageBanner, SectionHeading } from "@/components/site/PageBanner";
-import { Reveal } from "@/components/site/Reveal";
+import { BrandStamp, Reveal } from "@/components/site/Reveal";
 import { categories, company, images, products } from "@/data/site";
 
 export const Route = createFileRoute("/gallery")({
@@ -59,12 +59,15 @@ function Gallery() {
                       onClick={() => setOpen(isOpen ? null : cat.slug)}
                       className="flex w-full items-center gap-5 p-6 text-left sm:p-8"
                     >
-                      <img
-                        src={cat.image}
-                        alt={cat.title}
-                        loading="lazy"
-                        className="h-16 w-16 shrink-0 rounded-2xl object-cover"
-                      />
+                      <span className="relative h-16 w-16 shrink-0 overflow-hidden rounded-2xl">
+                        <img
+                          src={cat.image}
+                          alt={cat.title}
+                          loading="lazy"
+                          className="h-full w-full object-cover"
+                        />
+                        <BrandStamp />
+                      </span>
                       <span className="min-w-0 flex-1">
                         <span className="block font-display text-xl text-primary">{cat.title}</span>
                         <span className="mt-1 block truncate text-sm text-muted-foreground">
@@ -103,6 +106,7 @@ function Gallery() {
                                     loading="lazy"
                                     className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
                                   />
+                                  <BrandStamp />
                                 </div>
                                 <div className="flex flex-1 flex-col p-6">
                                   <h3 className="font-display text-lg leading-snug text-primary">
