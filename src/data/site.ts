@@ -21,6 +21,12 @@ import catBeverages from "@/assets/cat-beverages.jpg";
 import catOils from "@/assets/cat-oils.jpg";
 import catImmune from "@/assets/cat-immune.jpg";
 import brandLogo from "@/assets/eco-friendly-resources-logo-transparent.png";
+import heroProtein from "@/assets/hero-protein.png";
+import heroHerbal from "@/assets/hero-herbal.png";
+import heroBars from "@/assets/hero-bars.png";
+import heroImmune from "@/assets/hero-immune.png";
+import heroVitamins from "@/assets/hero-vitamins.png";
+import heroWellness from "@/assets/hero-wellness.png";
 import proposedFacilityAsset from "@/assets/proposed-facility.jpg.asset.json";
 
 const proposedFacility = proposedFacilityAsset.url;
@@ -49,6 +55,12 @@ export const images = {
   catOils,
   catImmune,
   brandLogo,
+  heroProtein,
+  heroHerbal,
+  heroBars,
+  heroImmune,
+  heroVitamins,
+  heroWellness,
   proposedFacility,
 };
 
@@ -63,48 +75,12 @@ export const company = {
 };
 
 export const heroSlides = [
-  {
-    image: proteinPowder,
-    eyebrow: "Protein & Sports Nutrition",
-    title: "Whey, Plant Protein & Gainers, Made to Order",
-    text: "Low-MOQ protein powder manufacturing with taste profiling, scoop-level accuracy and export-ready packaging.",
-  },
-  {
-    image: proteinBars,
-    eyebrow: "Healthy Foods",
-    title: "Protein Bars Your Customers Come Back For",
-    text: "20g protein bars, bites and snacks developed, baked and wrapped in our certified facility.",
-  },
-  {
-    image: supplementsShot,
-    eyebrow: "Vitamins, Softgels & Gummies",
-    title: "A Full Supplement Range Under One Roof",
-    text: "Capsules, tablets, softgels, gummies and effervescents — formulated, tested and labelled for your brand.",
-  },
-  {
-    image: heroFactoryBranded,
-    eyebrow: "WHO-GMP Certified Manufacturing",
-    title: "India's Trusted Nutraceutical Manufacturer",
-    text: "Two decades of contract manufacturing excellence — from formulation to finished, export-ready packaging.",
-  },
-  {
-    image: heroProducts,
-    eyebrow: "Private Label & Third Party",
-    title: "Your Brand. Our Craftsmanship.",
-    text: "Launch a complete supplement range with bespoke formulations, packaging design and regulatory support.",
-  },
-  {
-    image: heroLabBranded,
-    eyebrow: "Research Driven",
-    title: "Science That Earns Consumer Trust",
-    text: "In-house R&D and NABL-grade quality testing at every stage of the production cycle.",
-  },
-  {
-    image: heroHerbs,
-    eyebrow: "Ayurveda Meets Modern Science",
-    title: "Rooted in Herbs, Refined by Technology",
-    text: "Standardised Ayurvedic extracts blended with clinically studied actives for measurable results.",
-  },
+  { image: heroProtein, eyebrow: "Protein & Sports Nutrition", title: "Whey, Plant Protein & Gainers", text: "Branded protein packaging, made to order with dependable quality and export-ready presentation." },
+  { image: heroHerbal, eyebrow: "Ayurveda Meets Modern Science", title: "Botanical Wellness, Beautifully Packaged", text: "Premium herbal supplements developed with trusted ingredients and modern manufacturing discipline." },
+  { image: heroBars, eyebrow: "Healthy Foods", title: "Protein Bars Customers Come Back For", text: "Shelf-ready bars and snacks with distinctive packaging for growing nutrition brands." },
+  { image: heroImmune, eyebrow: "Daily Wellness", title: "Focused Formulas for Everyday Health", text: "Immune support, zinc, elderberry and more — formulated, tested and ready for your label." },
+  { image: heroVitamins, eyebrow: "Vitamins, Gummies & Softgels", title: "A Complete Supplement Range", text: "From multivitamins to gummies and softgels, bring your next product line to life." },
+  { image: heroWellness, eyebrow: "Private Label Manufacturing", title: "Your Brand. Our Craftsmanship.", text: "Launch a complete wellness range with polished packaging and a certified manufacturing partner." },
 ];
 
 export const faqs = [

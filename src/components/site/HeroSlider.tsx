@@ -1,22 +1,19 @@
 import { Link } from "@tanstack/react-router";
 import { AnimatePresence, motion } from "motion/react";
-import { ChevronLeft, ChevronRight } from "lucide-react";
-import { useCallback, useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { Button } from "@/components/site/Button";
-import { heroSlides } from "@/data/site";
+import { images, heroSlides } from "@/data/site";
 
 export function HeroSlider() {
   const [[index, dir], setState] = useState<[number, number]>([0, 1]);
-  const paused = useRef(false);
-
   const go = useCallback((next: number, direction: number) => {
     setState([(next + heroSlides.length) % heroSlides.length, direction]);
   }, []);
 
   useEffect(() => {
     const id = setInterval(() => {
-      if (!paused.current) setState(([i]) => [(i + 1) % heroSlides.length, 1]);
-    }, 5000);
+      setState(([i]) => [(i + 1) % heroSlides.length, 1]);
+    }, 4000);
     return () => clearInterval(id);
   }, []);
 
@@ -24,9 +21,7 @@ export function HeroSlider() {
 
   return (
     <section
-      className="relative h-screen min-h-[560px] overflow-hidden bg-primary sm:min-h-[640px]"
-      onMouseEnter={() => (paused.current = true)}
-      onMouseLeave={() => (paused.current = false)}
+      className="relative h-screen min-h-[560px] overflow-hidden bg-background sm:min-h-[640px]"
     >
       {/* Full-bleed slide */}
       <AnimatePresence initial={false} custom={dir}>
@@ -46,7 +41,12 @@ export function HeroSlider() {
             width={1920}
             height={1080}
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-scrim/85 via-scrim/50 to-scrim/10" />
+          <div className="absolute inset-0 bg-gradient-to-r from-scrim/75 via-scrim/35 to-transparent" />
+          <img
+            src={images.brandLogo}
+            alt="Eco-Friendly Resources Private Limited"
+            className="absolute left-1/2 top-16 z-10 w-28 -translate-x-1/2 object-contain drop-shadow-md sm:top-20 sm:w-40"
+          />
         </motion.div>
       </AnimatePresence>
 
