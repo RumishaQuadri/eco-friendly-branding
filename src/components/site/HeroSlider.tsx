@@ -1,19 +1,22 @@
 import { Link } from "@tanstack/react-router";
 import { AnimatePresence, motion } from "motion/react";
-import { useCallback, useEffect, useState } from "react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import { Button } from "@/components/site/Button";
 import { heroSlides } from "@/data/site";
 
 export function HeroSlider() {
   const [[index, dir], setState] = useState<[number, number]>([0, 1]);
+  const paused = useRef(false);
+
   const go = useCallback((next: number, direction: number) => {
     setState([(next + heroSlides.length) % heroSlides.length, direction]);
   }, []);
 
   useEffect(() => {
     const id = setInterval(() => {
-      setState(([i]) => [(i + 1) % heroSlides.length, 1]);
-    }, 4000);
+      if (!paused.current) setState(([i]) => [(i + 1) % heroSlides.length, 1]);
+    }, 5000);
     return () => clearInterval(id);
   }, []);
 
@@ -21,7 +24,9 @@ export function HeroSlider() {
 
   return (
     <section
-      className="relative h-screen min-h-[560px] overflow-hidden bg-background sm:min-h-[640px]"
+      className="relative h-screen min-h-[560px] overflow-hidden bg-primary sm:min-h-[640px]"
+      onMouseEnter={() => (paused.current = true)}
+      onMouseLeave={() => (paused.current = false)}
     >
       {/* Full-bleed slide */}
       <AnimatePresence initial={false} custom={dir}>
@@ -37,13 +42,11 @@ export function HeroSlider() {
           <img
             src={slide.image}
             alt={slide.title}
-            className="h-full w-full object-contain object-center"
+            className="h-full w-full object-cover object-center"
             width={1920}
             height={1080}
-            loading={index === 0 ? "eager" : "lazy"}
-            decoding="async"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-scrim/65 via-scrim/15 to-transparent" aria-hidden="true" />
+          <div className="absolute inset-0 bg-gradient-to-r from-scrim/85 via-scrim/50 to-scrim/10" />
         </motion.div>
       </AnimatePresence>
 
