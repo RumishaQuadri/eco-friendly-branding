@@ -2,7 +2,7 @@ import { Link } from "@tanstack/react-router";
 import { AnimatePresence, motion } from "motion/react";
 import { useCallback, useEffect, useState } from "react";
 import { Button } from "@/components/site/Button";
-import { images, heroSlides } from "@/data/site";
+import { heroSlides } from "@/data/site";
 
 export function HeroSlider() {
   const [[index, dir], setState] = useState<[number, number]>([0, 1]);
@@ -37,16 +37,13 @@ export function HeroSlider() {
           <img
             src={slide.image}
             alt={slide.title}
-            className="h-full w-full object-cover object-center"
+            className="h-full w-full object-contain object-center"
             width={1920}
             height={1080}
+            loading={index === 0 ? "eager" : "lazy"}
+            decoding="async"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-scrim/75 via-scrim/35 to-transparent" />
-          <img
-            src={images.brandLogo}
-            alt="Eco-Friendly Resources Private Limited"
-            className="absolute left-1/2 top-16 z-10 w-28 -translate-x-1/2 object-contain drop-shadow-md sm:top-20 sm:w-40"
-          />
+          <div className="absolute inset-0 bg-gradient-to-r from-scrim/65 via-scrim/15 to-transparent" aria-hidden="true" />
         </motion.div>
       </AnimatePresence>
 
