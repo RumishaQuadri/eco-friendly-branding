@@ -74,22 +74,13 @@ export const company = {
   whatsapp: "919811045678",
 };
 
-const suppliedProductImages = {
-  protein: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-D3jThyFKAduyPuQcCNJf69i4m5VN8Z.png",
-  herbs: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-u3zxBQy6wWHrwY5I4NuPlAH46zYAIr.png",
-  bars: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-UM6gwiRQMbvbSTW0k3RShkRAtoNefw.png",
-  immune: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-KsvIN5IogYe2dtatNR9yv2768Pysg5.png",
-  vitamins: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-4sPLT676S6gZfjLBq7pl9FW4VeXAG0.png",
-  wellness: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-34rHu6f80DNuxS9Ur4yeM1JweWjH3M.png",
-};
-
 export const heroSlides = [
-  { image: suppliedProductImages.protein, eyebrow: "Protein & Sports Nutrition", title: "Whey, Plant Protein & Gainers", text: "Branded protein packaging, made to order with dependable quality and export-ready presentation." },
-  { image: suppliedProductImages.herbs, eyebrow: "Ayurveda Meets Modern Science", title: "Botanical Wellness, Beautifully Packaged", text: "Premium herbal supplements developed with trusted ingredients and modern manufacturing discipline." },
-  { image: suppliedProductImages.bars, eyebrow: "Healthy Foods", title: "Protein Bars Customers Come Back For", text: "Shelf-ready bars and snacks with distinctive packaging for growing nutrition brands." },
-  { image: suppliedProductImages.immune, eyebrow: "Daily Wellness", title: "Focused Formulas for Everyday Health", text: "Immune support, zinc, elderberry and more — formulated, tested and ready for your label." },
-  { image: suppliedProductImages.vitamins, eyebrow: "Vitamins, Gummies & Softgels", title: "A Complete Supplement Range", text: "From multivitamins to gummies and softgels, bring your next product line to life." },
-  { image: suppliedProductImages.wellness, eyebrow: "Private Label Manufacturing", title: "Your Brand. Our Craftsmanship.", text: "Launch a complete wellness range with polished packaging and a certified manufacturing partner." },
+  { image: heroProtein, eyebrow: "Protein & Sports Nutrition", title: "Whey, Plant Protein & Gainers", text: "Branded protein packaging, made to order with dependable quality and export-ready presentation." },
+  { image: heroHerbal, eyebrow: "Ayurveda Meets Modern Science", title: "Botanical Wellness, Beautifully Packaged", text: "Premium herbal supplements developed with trusted ingredients and modern manufacturing discipline." },
+  { image: heroBars, eyebrow: "Healthy Foods", title: "Protein Bars Customers Come Back For", text: "Shelf-ready bars and snacks with distinctive packaging for growing nutrition brands." },
+  { image: heroImmune, eyebrow: "Daily Wellness", title: "Focused Formulas for Everyday Health", text: "Immune support, zinc, elderberry and more — formulated, tested and ready for your label." },
+  { image: heroVitamins, eyebrow: "Vitamins, Gummies & Softgels", title: "A Complete Supplement Range", text: "From multivitamins to gummies and softgels, bring your next product line to life." },
+  { image: heroWellness, eyebrow: "Private Label Manufacturing", title: "Your Brand. Our Craftsmanship.", text: "Launch a complete wellness range with polished packaging and a certified manufacturing partner." },
 ];
 
 export const faqs = [
